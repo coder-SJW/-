@@ -6,16 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript">
-        for(var a = 0; a < 9; a++){
-    var str = "";
-    for(var b = 0; b < 8-a; b++){
-        str += " ";
-    }
-    for(var b = 0; b < a*2-1; b++){
-        str += "*";
-    } 
-    console.log(str);
-}
+        //三角形
+        for (var a = 0; a < 9; a++) {
+            var str = "";
+            for (var b = 0; b < 8 - a; b++) {
+                str += " ";
+            }
+            for (var b = 0; b < a * 2 - 1; b++) {
+                str += "*";
+            }
+            console.log(str);
+        }
+        //平行四边形 
+        for (let i = 0; i < 5; i++) {
+            for (let k = i; k <= 5; k++) {
+                document.write("&nbsp;");
+
+            }
+            for (let j = 0; j < 10; j++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
     </script>
 </head>
 <body>
