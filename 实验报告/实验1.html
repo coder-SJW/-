@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        //1
+        console.log("1:函数加法");
+        function getSum(num1,num2){
+            var sum = num1 + num2;
+            console.log(num1+"+"+num2+"="+(num1+num2));
+        }
+        getSum(1,1);
+        //2
+        console.log("2:函数乘法");
+        getProduct(2,2)
+        var getProduct = function(num1,num2){
+            console.log(num1+"*"+num2+"="+(num1*num2));
+        }
+        
+        //3
+        console.log("3:变量的作用域");
+        var a = 100;
+        function test(){
+            console.log(a);
+            a = 10;
+            console.log(a);
+        }
+        test();
+        console.log(a);
+    </script>
+    <script type="text/javascript">
+        //4
+        console.log("4:");
+        var a = 10;
+        fun1();
+        function fun1(){
+            var b = 20;
+            console.log(a);
+            console.log(b);
+            var a = 30;
+        }
+        //5
+        console.log("5:arguments数组");
+        function fun2(a,b) {
+            console.log(arguments[0]);
+            console.log(arguments[1]);
+            console.log(arguments[2]);
+        }
+        fun2(1,2,3);
+        //6
+        console.log("6:");
+        for(var temp in [1,2,3]){
+            //temp取出来是索引
+            console.log(temp);
+        }
+    </script>
+    <script type="text/javascript">
+        //7
+        console.log("7:");
+        "use strict";
+        num = 100;
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
