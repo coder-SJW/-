@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        //判断对象类型
+        var arr = new Array();
+        console.log(typeof (arr));//object
+        console.log(arr instanceof Array);//true
+        console.log(arr instanceof String);//false
+        //构造函数构造对象
+        var arr2 = new Array(1,2,3);
+        //直接定义
+        var arr3 = [1,2,3];
+        var arr4 = [];
+
+        //RegExp正则表达式
+        //Function
+        var f1 = new Function("a","b","console.log(a+b)");
+        f1(1,2);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
